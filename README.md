@@ -19,7 +19,7 @@ this project uses,
 
 - [Blender](https://www.blender.org/) (used to create assets used in project)
 
-# Load missing assets,
+# Load missing assets
 
 Too large assets are stored on google drive, download them from and put them in desired locations.
 (means replace "Model frames" folder with google drive's "Model frames" folder.)
@@ -27,7 +27,7 @@ Too large assets are stored on google drive, download them from and put them in 
 [Get Asset Folder Here](https://drive.google.com/drive/folders/1y6nCO4Pt2j0oRWAvcAxyl72B2o8LeY8X?usp=sharing)
 
 
-# Running Locally,
+# Running Locally
 
 To run this project on live server, run
 
