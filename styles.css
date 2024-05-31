@@ -1,0 +1,366 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: gilroy;
+    src: url('Gilroy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBolder;
+    src: url('gilroyBolder.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBold;
+    src: url('gilroyBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyMedium;
+    src: url('gilroyMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: gilroyBoldest;
+    src: url('gilroyBoldest.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyThin;
+    src: url('gilroyThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: gilroyLight;
+    src: url('gilroyLight.ttf') format('truetype');
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+#page4{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 11;
+}
+canvas{
+    position: relative;
+    max-width: 100vw;
+    z-index: 9;
+    max-height: 100vh;
+}
+#loop{
+    display: flex;
+    position: absolute;
+    top: 28%;
+    height: 25%;
+    width: 100%;
+    font-size: 90px;
+    white-space: nowrap;
+    color: white;
+    font-family: gilroy;
+}
+#loop>h1{
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    font-family: gilroyMedium;
+    -webkit-text-stroke: 1.5px white;
+    color: transparent;
+}
+
+#loop>h1>b{
+    font-family: gilroyBold;
+}
+#loop>h1>d{
+    font-family: gilroyLight;
+}
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+}
+#nav>div>h3{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
+    background-color: black;
+    font-family: gilroyThin;
+    font-size: 30px;
+    color: white;
+}
+#nav>div>h3>b{
+    font-family: gilroyBold;
+    font-size: 30px;
+}
+#nav>div>button{
+    margin-left: 2rem;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 15px;
+}
+#leftText{
+    position: absolute;
+    top: 59%;
+    font-family: gilroyLight;
+    font-size: 15px;
+    left: 8%;
+    z-index: 10;
+    line-height: 23px;
+    color: white;
+}
+#rightText{
+    color: white;
+    position: absolute;
+    top: 59%;
+    right: 8%;
+    z-index: 10;
+    font-family: gilroyBold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: end;
+}
+#rightText>b{
+    font-size: 15px;
+    color: white;
+}
+#leftText1{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+#rightText1{
+    position: absolute;
+    top: 50%;
+    text-align: end;
+    right: 8%;
+}
+#pg1head{
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 20.16px;
+}
+#pg1para{
+    color: white;
+    font-family: gilroyBold;
+    font-size: 43.2px;
+    line-height: 51.84px;
+    letter-spacing: 3px;
+}
+#leftText2{
+    position: absolute;
+    top: 27%;
+    left: 8%;
+}
+#rightText2{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+}
+#pg2head{
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 20.16px;
+}
+#pg2para{
+    color: white;
+    font-family: gilroyBold;
+    font-size: 64px;
+    line-height: 76.8px;
+    letter-spacing: 3px;
+}
+#pg2paraRight1{
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    color: white;
+    line-height: 20.16px;
+    text-align: end;
+}
+#pg2paraRight2{
+    color: white;
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    line-height: 25.16px;
+    text-align: end;
+}
+#leftText3{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+#rightText3{
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    text-align: end;
+}
+#pg3paraLeft1{
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    line-height: 20.16px;
+    color: white;
+}
+#pg3paraLeft2{
+    color: white;
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    line-height: 25.16px;
+}
+#pg3head{
+    font-family: gilroyLight;
+    font-size: 14.4px;
+    line-height: 20.16px;
+    letter-spacing: 1px;
+    color: white;
+}
+#pg3paraRight{
+    color: white;
+    font-family: gilroyBold;
+    font-size: 64px;
+    line-height: 76.8px;
+    letter-spacing: 3px;
+}
+
+#features_head{
+    position: absolute;
+    left: 42%;
+    top: 20%;
+    color: white;
+    font-family: gilroyBold;
+    font-size: 3rem;
+}
+
+.slider{
+    height: 250px;
+    margin:auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+
+}
+
+.slide_track{
+    display: flex;
+    width: calc(25rem*18);
+    animation: scroll 40s linear infinite;
+}
+
+.slide_track:hover{
+    animation-play-state: paused;
+}
+.card{
+    width: 25rem;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px white);
+    transition: 0.3s;
+}
+
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    font-family: gilroyBold;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+}
